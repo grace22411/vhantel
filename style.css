@@ -1,0 +1,285 @@
+/* line 1, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 4, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+body, html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif; }
+
+/* line 11, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+.modal_content {
+  top: 0;
+  left: 0;
+  overflow: auto;
+  display: none;
+  width: 100%;
+  float: right;
+  height: 100%;
+  position: fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+  z-index: 9999;
+  animation: scale_in 0.2s linear 1; }
+  /* line 23, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+  .modal_content .close {
+    color: #fff !important;
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+    margin: 15px 15px 0 0; }
+  /* line 30, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+  .modal_content ul {
+    text-align: center;
+    color: #f2f2f2;
+    margin: auto;
+    margin: 100px auto 0 auto;
+    width: 22%;
+    height: 70px; }
+    /* line 38, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+    .modal_content ul a {
+      text-decoration: none; }
+    /* line 41, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+    .modal_content ul li {
+      list-style-type: none;
+      font-size: 40px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      color: #fff;
+      text-align: center;
+      transition: .2s ease-in-out;
+      margin-left: 0px;
+      padding-top: 10px;
+      padding-left: 0;
+      display: list-item; }
+  /* line 56, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+  .modal_content li:hover {
+    color: #fff;
+    text-decoration: none; }
+  @media screen and (max-width: 420px) {
+    /* line 11, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+    .modal_content {
+      width: 100%; }
+      /* line 62, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+      .modal_content ul {
+        width: 70%; }
+        /* line 64, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+        .modal_content ul li {
+          font-size: 25px;
+          width: 100%; } }
+  @media only screen and (min-width: 421px) and (max-width: 768px) {
+    /* line 11, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+    .modal_content {
+      width: 100%; }
+      /* line 73, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+      .modal_content ul {
+        width: 70%; }
+        /* line 75, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+        .modal_content ul li {
+          font-size: 25px;
+          width: 100%; } }
+
+/* line 82, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+.section {
+  height: 100%;
+  width: 100%;
+  z-index: -9999;
+  background: linear-gradient(to bottom right, rgba(60, 54, 73, 0.93), rgba(87, 186, 90, 0.9)), url(images/newbanner.jpeg);
+  background-position: center;
+  background-size: cover; }
+  /* line 89, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+  .section .navbar {
+    padding: 25px 120px;
+    height: 140px;
+    width: 100%;
+    background-color: transparent; }
+    /* line 95, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+    .section .navbar a {
+      float: left; }
+      /* line 97, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+      .section .navbar a img {
+        width: 170px;
+        height: 45px;
+        float: left; }
+    /* line 102, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+    .section .navbar .nav {
+      float: right !important; }
+      /* line 104, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+      .section .navbar .nav li {
+        padding-left: 25px; }
+        /* line 107, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+        .section .navbar .nav li a {
+          color: #fff;
+          font-weight: 600;
+          font-size: 15px;
+          transition: .2s ease-in-out; }
+        /* line 113, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+        .section .navbar .nav li a:hover {
+          color: #57BA5A; }
+    /* line 119, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+    .section .navbar .navbar_contain {
+      width: 55px;
+      display: none;
+      height: 50px;
+      float: right !important;
+      margin-top: 40px;
+      cursor: pointer; }
+      /* line 126, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+      .section .navbar .navbar_contain .navbar_1, .section .navbar .navbar_contain .navbar_2, .section .navbar .navbar_contain .navbar_3 {
+        width: 25px;
+        height: 2px;
+        margin: auto;
+        background-color: #fff; }
+      /* line 132, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+      .section .navbar .navbar_contain .navbar_2, .section .navbar .navbar_contain .navbar_3 {
+        margin-top: 5px; }
+    @media only screen and (max-width: 420px) {
+      /* line 89, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+      .section .navbar {
+        padding: 0 30px;
+        height: 90px; }
+        /* line 144, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+        .section .navbar li {
+          display: none; }
+        /* line 147, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+        .section .navbar .navbar_contain {
+          display: block;
+          margin-right: -125px; }
+        /* line 151, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+        .section .navbar a {
+          float: left; }
+          /* line 153, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+          .section .navbar a img {
+            width: 120px;
+            height: 30px;
+            float: left; } }
+    @media only screen and (min-width: 421px) and (max-width: 767px) {
+      /* line 89, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+      .section .navbar {
+        padding: 0 50px;
+        height: 90px; }
+        /* line 162, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+        .section .navbar li {
+          display: none; }
+        /* line 165, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+        .section .navbar .navbar_contain {
+          display: block;
+          margin-right: -325px; }
+        /* line 169, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+        .section .navbar a {
+          float: left; }
+          /* line 171, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+          .section .navbar a img {
+            width: 150px;
+            height: 40px;
+            float: left; } }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      /* line 89, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+      .section .navbar {
+        padding: 0 100px;
+        height: 100px; }
+        /* line 181, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+        .section .navbar li {
+          display: none; }
+        /* line 184, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+        .section .navbar .navbar_contain {
+          display: block;
+          margin-right: -400px; }
+        /* line 188, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+        .section .navbar a {
+          float: left; }
+          /* line 190, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+          .section .navbar a img {
+            width: 150px;
+            height: 40px;
+            float: left; } }
+  /* line 198, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+  .section .row .mx-auto {
+    text-align: center;
+    margin-top: 80px;
+    width: 50%; }
+    /* line 202, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+    .section .row .mx-auto h1 {
+      font-weight: 700;
+      color: #57BA5A; }
+    /* line 206, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+    .section .row .mx-auto p {
+      color: #fff; }
+    /* line 210, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+    .section .row .mx-auto input {
+      width: 50%;
+      margin: auto;
+      padding-left: 10px;
+      height: 40px;
+      border: none;
+      border-radius: 5px; }
+    /* line 218, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+    .section .row .mx-auto button {
+      background-color: #3c3649;
+      height: 40px;
+      color: #fff;
+      border: none;
+      border-radius: 5px; }
+  @media only screen and (max-width: 420px) {
+    /* line 227, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+    .section .row .mx-auto {
+      width: 90%;
+      margin-top: 120px; }
+      /* line 230, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+      .section .row .mx-auto h1 {
+        font-size: 30px; }
+      /* line 233, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+      .section .row .mx-auto p {
+        font-size: 14px; }
+      /* line 236, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+      .section .row .mx-auto input {
+        width: 70%; }
+      /* line 239, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+      .section .row .mx-auto ::placeholder {
+        font-size: 14px; } }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    /* line 245, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+    .section .row .mx-auto {
+      width: 80%;
+      margin-top: 120px; }
+      /* line 248, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+      .section .row .mx-auto h1 {
+        font-size: 40px; }
+      /* line 251, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+      .section .row .mx-auto p {
+        font-size: 15px; }
+      /* line 254, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+      .section .row .mx-auto input {
+        width: 70%; }
+      /* line 257, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+      .section .row .mx-auto ::placeholder {
+        font-size: 17px; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* line 264, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+    .section .row .mx-auto {
+      width: 70%;
+      margin-top: 120px; }
+      /* line 267, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+      .section .row .mx-auto h1 {
+        font-size: 45px; }
+      /* line 270, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+      .section .row .mx-auto p {
+        font-size: 15px; }
+      /* line 273, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+      .section .row .mx-auto input {
+        width: 70%; }
+      /* line 276, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+      .section .row .mx-auto ::placeholder {
+        font-size: 17px; } }
+
+/* line 283, C:/Users/GRACE/Documents/projects/Vhandtel/new/style.scss */
+.footer {
+  text-align: center;
+  color: #3c3649;
+  font-size: 14px;
+  padding-top: 20px; }
+
+/*# sourceMappingURL=style.css.map */
